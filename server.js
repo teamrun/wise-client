@@ -21,8 +21,6 @@ for( var i in config.entry ){
 // config.devtool = 'cheap-module-source-map';
 config.devtool = 'source-map';
 
-console.log(config);
-
 new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
     hot: true,

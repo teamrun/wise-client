@@ -4,7 +4,8 @@ var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './lib/main.jsx'
+    app: './lib/main.jsx',
+    style: './lib/style.js'
   },
   output: {
     path: __dirname + '/lib/dist/',
@@ -28,8 +29,8 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.jsx$/, exclude: /node_modules/,
-        loaders: ['react-hot', 'babel']
+      { test: /(\.jsx|\.js)$/, exclude: /node_modules/,
+        loaders: ['react-hot', 'babel?stage=0']
       },
       {
         test: /\.less$/,
