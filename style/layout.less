@@ -1,3 +1,5 @@
+@mainWidth: 600px;
+
 *{
   box-sizing: border-box;
 
@@ -11,58 +13,16 @@ html,
 body{
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: "Proxima Nova";
+}
+#ctn{
+  height: 100%;
 }
 
 .wise-app{
+  height: 100%;
   background-color: #1B1D20;
 }
 
-.post-list{
-  margin: 0 auto;
-  // width: 700px;
-  width: 500px;
-  overflow: auto;
-}
-.post-item{
-  position: relative;
-  background-color: #FEFDFC;
-  color: #4C4A48;
-  margin: 2em 0;
-  box-shadow: 0 0 4px #000;
-
-  .user-info{
-    position: absolute;
-    z-index: 100;
-    left: 1em;
-    top: 1em;
-  }
-  .img-item{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .other-part{
-    padding: 1em;
-    line-height: 1.5;
-
-    .post-caption{
-      overflow: hidden;
-      p{
-        margin: 0;
-      }
-    }
-  }
-
-  a{
-    color: #00CEC6;
-  }
-
-  blockquote{
-    border-left: 4px solid #d9d9d9;
-    padding-left: 1em;
-    margin-left: 0em;
-  }
-}
-
-@import './tags.less';
+@import "./dashboard.less";

@@ -1,0 +1,75 @@
+#dashboard{
+  height: 100%;
+  overflow: auto;
+}
+
+.post-list{
+  margin: 0 auto;
+  // width: 700px;
+  width: @mainWidth;
+  overflow: auto;
+}
+.post-item{
+  position: relative;
+  background-color: #FEFDFC;
+  color: #4C4A48;
+  margin: 2em 0;
+  box-shadow: 0 0 4px #000;
+
+  .user-info{
+    position: absolute;
+    z-index: 100;
+    left: 1em;
+    top: 1em;
+  }
+  .img-item{
+    display: block;
+    background-image: url('/img/progress.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .text-ctn{
+    h1,h2,h3,h4,
+    p{
+      margin: 0 1em 1em 1em;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em;
+    }
+  }
+  .other-part{
+    padding: 1em;
+    line-height: 1.5;
+
+    .post-caption{
+      overflow: hidden;
+      p{
+        margin: 0;
+      }
+    }
+  }
+
+  a{
+    color: #00CEC6;
+  }
+
+  blockquote{
+    border-left: 4px solid #d9d9d9;
+    padding-left: 1em;
+    margin-left: 0em;
+  }
+}
+
+
+.tag-list{
+  margin-top: 1em;
+
+  .tag-item{
+    display: inline-block;
+    margin-right: 1em;
+    color: #7F7B78;
+    font-size: 14px;
+  }
+}
